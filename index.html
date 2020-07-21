@@ -9,21 +9,23 @@
 <body>
     <script src="calc.js"></script>
     <p>Calculadora:</p>
-    <button onclick="a1()">1</button>
-    <button onclick="a2()">2</button>
-    <button onclick="a3()">3</button>
-    <button onclick="a4()">4</button>
-    <button onclick="a5()">5</button>
-    <button onclick="a6()">6</button>
-    <button onclick="a7()">7</button>
-    <button onclick="a8()">8</button>
-    <button onclick="a9()">9</button>
-    <button onclick="a0()">0</button>
-    <button onclick="soma()">+</button>
-    <button onclick="subtrair()">-</button>
+    <div class= "visor" id="visor" style="overflow-y: scroll;">
 
-    <button onclick="Resultado()">=</button>
-
-    <p id = "test">Final</p>
+    </div>
+    <div class="buttons">
+        <button onclick="a1()">1</button>
+        <button onclick="a2()">2</button>
+        <button onclick="a3()">3</button>
+        <button onclick="a4()">4</button>
+        <button onclick="a5()">5</button>
+        <button onclick="a6()">6</button>
+        <button onclick="a7()">7</button>
+        <button onclick="a8()">8</button>
+        <button onclick="a9()">9</button>
+        <button onclick="a0()">0</button>
+        <button onclick="somatela(); soma()">+</button>
+        <button onclick="subtrairtela(); subtrair()">-</button>
+        <button onclick="Resultado(),igualtela()">=</button>
+    </div>
 </body>
 </html>

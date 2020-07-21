@@ -1,8 +1,4 @@
-//let a = document.getElement
-//const adicao = (a,b) => a+b
-//function Resultado() {
-//    test.innerHTML = `${a}`
-//}
+
 var ini = 0
 var fin = 0
 var s1 = false
@@ -11,36 +7,65 @@ var valora = []
 {
     function a1(){
         valora.push("1")
+        visor.innerHTML += '1'
     }
     function a2(){
         valora.push("2")
+        visor.innerHTML += '2'
     }
     function a3(){
         valora.push("3")
+        visor.innerHTML += '3'
     }
     function a4(){
         valora.push("4")
+        visor.innerHTML += '4'
     }
     function a5(){
         valora.push("5")
+        visor.innerHTML += '5'
     }
     function a6(){
         valora.push("6")
+        visor.innerHTML += '6'
     }
     function a7(){
         valora.push("7")
+        visor.innerHTML += '7'
     }
     function a8(){
         valora.push("8")
+        visor.innerHTML += '8'
     }
     function a9(){
         valora.push("9")
+        visor.innerHTML += '9'
     }
     function a0(){
         valora.push("0")
+        visor.innerHTML += '0'
     }
+    function somatela(){
+        visor.innerHTML += '+'
+    }
+    function subtrairtela(){
+        visor.innerHTML += '-'
+    }
+    function igualtela(){
+        visor.innerHTML += '='    
+        visor.innerHTML += `${ini}`
+        var fin = 0
+        var s1 = false
+        var s2 = false
+        var valora = []
+        visor.innerHTML += "<br>"    
+        visor.innerHTML += `${ini}`
+        window.document.getElementById("visor").scrollBy(0,50);
+
+}
 }
 function soma() {
+
     if(s2===true){
         subtrair()
         s2= false
@@ -61,11 +86,11 @@ function soma() {
         let b = Number(fin)
         var soma = a+b
         ini=soma
-        test.innerHTML = `A soma dos valores é ${ini}`
 
     }       
     valora = []
     fin = 0
+    
 }
 }
 function subtrair() {
@@ -78,7 +103,6 @@ function subtrair() {
     if(ini===0){
         for(n=0;n<valora.length;n++){
         ini += valora[n]
-   
     }   
         s2 = true   
         valora = []
@@ -90,7 +114,6 @@ function subtrair() {
         let b = Number(fin)
         var sub = a-b
         ini=sub
-        test.innerHTML = `A soma dos valores é ${ini}`
     }       
     valora = []
     fin = 0
@@ -104,6 +127,4 @@ function Resultado() {
         subtrair()
     }
     }
-
-    test.innerHTML = `A soma dos valores é ${ini}`
 }
